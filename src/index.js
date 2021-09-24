@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './reset.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import UserCard from './components/UserCard';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ul className="cardsContainer">
+      <>
+        {UserCard}
+      </>
+    </ul>
   </React.StrictMode>,
   document.getElementById('root')
 );
